@@ -8,15 +8,20 @@ function Footer() {
     <div className='footer-container'>
 
         <div className='input-areas'>
+          <div className='footer-subscription'>
+          <h2>Want to do a Photoshoot? Send your insta link and I'll get back to you!</h2>
+          <br></br>
           <form>
             <input
               className='footer-input'
               name='email'
               type='email'
-              placeholder='Your Email'
+              placeholder='Your Insta URL'
             />
-            <Button buttonStyle='btn--outline'>Subscribe</Button>
+            
+            <Button buttonStyle='btn--outline'>Send</Button>
           </form>
+          </div>
         </div>
       <div class='footer-links'>
         <div className='footer-link-wrapper'>

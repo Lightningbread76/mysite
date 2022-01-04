@@ -3,6 +3,7 @@ import './Cards.css';
 import CardItem from './CardItem';
 import Card from './Card';
 import Icon from './Icon';
+import Hobby from './Hobby';
 
 function Cards() {
   return (
@@ -19,7 +20,7 @@ function Cards() {
             />
             </div>
             <Card
-              text="As someone who has been coding since the age of 14, I consider myself a relatively experienced programmer. I’ve done a variety of projects in different fields, my most notable ones are the Note taking android app(Checkmate) and an interactive web book website. 
+              text="As someone who has been coding since the age of 14, I consider myself a relatively experienced programmer. I’ve done a variety of Hobbys in different fields, my most notable ones are the Note taking android app(Checkmate) and an interactive web book website. 
 
               What I can bring to the table is a deep understanding in Object Oriented Programming,HTML/CSS,  javascript, typescript, MongoDB and Firebase. 
               I also have experience in python, R, and the agile development workflow from my past internships and classes.
@@ -34,23 +35,23 @@ function Cards() {
           <h2>Hobbies:</h2>
           <div className='cards__container'>
           <ul className='cards__items'>
-            <CardItem
-              src='images/img-3.jpg'
-              text='Set Sail in the Atlantic Ocean visiting Uncharted Waters'
-              label='Sports'
-              path='/services'
-            />
-            <CardItem
+            <Hobby
               src='images/img-4.jpg'
-              text='Experience Football on Top of the Himilayan Mountains'
-              label='Adventure'
-              path='/products'
+              text='From basketball to skiing, theres no sport that I would elude from competing in.'
+              label='Sports'
+              path='https://www.instagram.com/kevinguo76/'
             />
-            <CardItem
-              src='images/img-8.jpg'
-              text='Ride through the Sahara Desert on a guided camel tour'
-              label='Adrenaline'
-              path='/sign-up'
+            <Hobby
+              src='images/img-9.jpg'
+              text='I can do both portrait and aerial photography, contact me if you want to do a photoshoot!'
+              label='Photography'
+              path='https://www.instagram.com/kevinguo76/'
+            />
+            <Hobby
+              src='images/img-2.jpg'
+              text='If you would like me to help you design your website, contact me, I give friends discounts!'
+              label='Web Design'
+              path='https://www.instagram.com/kevinguo76/'
             />
           </ul>
         </div>

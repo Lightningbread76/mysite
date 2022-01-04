@@ -1,13 +1,13 @@
 import React from 'react';
 
-function Project(props) {
+function Hobby(props) {
   return (
     <>
       <li className='cards__item'>
       <a className = 'cards__item__link' href={props.path} title = "Instagram">
           <figure className='cards__item__pic-wrap' data-category={props.label}>
             <img
-              className='cards__item__project'
+              className='cards__item__img'
               alt=''
               src={props.src}
             />
@@ -21,4 +21,4 @@ function Project(props) {
   );
 }
 
-export default Project;
+export default Hobby;
