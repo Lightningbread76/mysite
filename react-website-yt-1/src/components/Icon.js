@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 function Icon(props) {
     return (
         <>
-          <li className='cards__item'>
+          <li className='icons__item'>
             <Link className='cards__item__link' to={props.path}>
                 <img
                   className='cards__item__img'

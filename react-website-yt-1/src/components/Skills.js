@@ -1,153 +1,149 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
-//import CardDeck from "react-bootstrap/CardDeck";
-import Image from "react-bootstrap/Image";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
-
-
-
-// skills
-import { skills } from "./skills-data";
-
-import "./skills.styles.css";
-
+import Skillcard from './Skillcard';
+import './Cards.css';
 const Skills = () => {
   return (
-    <div className="pt-3 pb-3" id="skills">
-      <h1 className="text-center font-details-b pb-4">TECH SKILLS</h1>
-
-        <Row className="d-flex justify-content-around">
-          {/* Frontend */}
-          <Col md={4}>
-            <Card className="focus mt-2 mb-2">
+    <div className = 'cards'>
+        <Card className="category-title">
               <Card.Body>
                 {/* Frontend */}
-                <Card.Title className="text-center  card-title">Frontend</Card.Title>
+                <Card.Title className="card-title">Programming Languages</Card.Title>
                 <hr />
-                <Card.Text className="card-text d-flex justify-content-start flex-column">
-                  {skills.frontend.map((skill, index) => (
-                    <span className="p-2" key={index}>
-                      <a className="text-dark text-decoration-none" href={skill.link} target="_blank" rel="noopener noreferrer">
-                        <Image src={skill.imgSrc} alt={skill.imgAltText} rounded className="image-style m-1"></Image> {skill.skillName}
-                      </a>
-                    </span>
-                  ))}
-                </Card.Text>
+                <Card.Text className="card-text">
+                <Skillcard
+                  src = 'images/skills/java.svg'
+                  text = "Java"
+                  path = "https://www.djangoproject.com/"
+                  />
+                  <Skillcard
+                  src = 'images/skills/python.svg'
+                  text = "Python"
+                  path = "https://www.djangoproject.com/"
+                  />
+                  <Skillcard
+                  src = 'images/skills/R.png'
+                  text = "R"
+                  path = "https://www.djangoproject.com/"
+                  />
+                  <Skillcard
+                  src = 'images/skills/typescript.svg'
+                  text = "Typescript"
+                  path = "https://www.djangoproject.com/"
+                  />
+                  <Skillcard
+                  src = 'images/skills/javascript.svg'
+                  text = "Javascript"
+                  path = "https://www.djangoproject.com/"
+                  />
+                  </Card.Text>
               </Card.Body>
             </Card>
-          </Col>
-
-          {/* Backend */}
-          <Col md={4}>
-            <Card className="focus mt-2 mb-2">
+        <Card className="category-title">
               <Card.Body>
-                <Card.Title className="text-center  card-title">Backend</Card.Title>
+                {/* Frontend */}
+                <Card.Title className="card-title">Frontend</Card.Title>
                 <hr />
-                <Card.Text className="card-text d-flex justify-content-start flex-column">
-                  {skills.backend.map((skill, index) => (
-                    <span className="p-2" key={index}>
-                      <a className="text-dark text-decoration-none" href={skill.link} target="_blank" rel="noopener noreferrer">
-                        <Image src={skill.imgSrc} alt={skill.imgAltText} rounded className="image-style m-1"></Image> {skill.skillName}
-                      </a>
-                    </span>
-                  ))}
-                </Card.Text>
+                <Card.Text className="card-text">
+                
+                  <Skillcard
+                  src = 'images/skills/html-5.svg'
+                  text = "HTML5"
+                  path = "https://www.djangoproject.com/"
+                  />
+                  <Skillcard
+                  src = 'images/skills/css3.svg'
+                  text = "CSS3"
+                  path = "https://www.djangoproject.com/"
+                  />
+                  <Skillcard
+                  src = 'images/skills/react.svg'
+                  text = "React JS"
+                  path = "https://www.djangoproject.com/"
+                  />
+                  <Skillcard
+                  src = 'images/skills/material-ui-1.svg'
+                  text = "Material-UI"
+                  path = "https://www.djangoproject.com/"
+                  />
+                  <Skillcard
+                  src = 'images/skills/bootstrap-4.svg'
+                  text = "Bootstrap"
+                  path = "https://www.djangoproject.com/"
+                  />
+                  
+                  </Card.Text>
               </Card.Body>
             </Card>
-
-            {/* Hosting Platforms */}
-            <Card className="focus mt-2 mb-2 ">
+            <Card className="category-title">
               <Card.Body>
-                <Card.Title className="text-center  card-title">Hosting Platforms</Card.Title>
+                {/* Frontend */}
+                <Card.Title className="card-title">Backend</Card.Title>
                 <hr />
-                <Card.Text className="card-text d-flex justify-content-start flex-column">
-                  {skills.hostingPlatforms.map((skill, index) => (
-                    <span className="p-2" key={index}>
-                      <a className="text-dark text-decoration-none" href={skill.link} target="_blank" rel="noopener noreferrer">
-                        <Image src={skill.imgSrc} alt={skill.imgAltText} rounded className="image-style m-1"></Image> {skill.skillName}
-                      </a>
-                    </span>
-                  ))}
-                </Card.Text>
+                <Card.Text className="card-text">
+                <Skillcard
+                  src = 'images/skills/nodejs.svg'
+                  text = "Node JS"
+                  path = "https://www.djangoproject.com/"
+                  />
+                  <Skillcard
+                  src = 'images/skills/Django.svg'
+                  text = "Django"
+                  path = "https://www.djangoproject.com/"
+                  />
+                  <Skillcard
+                  src = 'images/skills/Springboot.png'
+                  text = "Springboot"
+                  path = "https://www.djangoproject.com/"
+                  />
+                  </Card.Text>
               </Card.Body>
             </Card>
-      
-
-          {/* Other Software */}
-          <Card className="focus mt-2 mb-2">
+            <Card className="category-title">
               <Card.Body>
-                <Card.Title className="text-center  card-title">Other Software</Card.Title>
+                {/* Frontend */}
+                <Card.Title className="card-title">Databases</Card.Title>
                 <hr />
-                <Card.Text className="card-text d-flex justify-content-start flex-column">
-                  {skills.otherSoftware.map((skill, index) => (
-                    <span className="p-2" key={index}>
-                      <a className="text-dark text-decoration-none" href={skill.link} target="_blank" rel="noopener noreferrer">
-                        <Image src={skill.imgSrc} alt={skill.imgAltText} rounded className="image-style m-1"></Image> {skill.skillName}
-                      </a>
-                    </span>
-                  ))}
-                </Card.Text>
+                <Card.Text className="card-text">
+                <Skillcard
+                  src = 'images/skills/mongodb.svg'
+                  text = "Mongo DB"
+                  path = "https://www.djangoproject.com/"
+                  />
+                  <Skillcard
+                  src = 'images/skills/postgresql.svg'
+                  text = "Postgresql"
+                  path = "https://www.djangoproject.com/"
+                  />
+                  <Skillcard
+                  src = 'images/skills/firebasefull.png'
+                  text = "Firebase"
+                  path = "https://www.djangoproject.com/"
+                  />
+                  </Card.Text>
               </Card.Body>
             </Card>
-          </Col>
-
-            
-              
-
-          {/* Programming Languages */}
-          <Col md={4}>
-            <Card className="focus mt-2 mb-2">
+            <Card className="category-title">
               <Card.Body>
-                <Card.Title className="text-center  card-title">Programming Languages</Card.Title>
+                {/* Frontend */}
+                <Card.Title className="card-title">Hosting Platforms</Card.Title>
                 <hr />
-                <Card.Text className="card-text d-flex justify-content-start flex-column">
-                  {skills.programmingLanguages.map((skill, index) => (
-                    <span className="p-2" key={index}>
-                      <a className="text-dark text-decoration-none" href={skill.link} target="_blank" rel="noopener noreferrer">
-                        <Image src={skill.imgSrc} alt={skill.imgAltText} rounded className="image-style m-1"></Image> {skill.skillName}
-                      </a>
-                    </span>
-                  ))}
-                </Card.Text>
+                <Card.Text className="card-text">
+                <Skillcard
+                  src = 'images/skills/heroku.svg'
+                  text = "Heroku"
+                  path = "https://www.djangoproject.com/"
+                  />
+                  <Skillcard
+                  src = 'images/skills/github.svg'
+                  text = "Github Pages"
+                  path = "https://www.djangoproject.com/"
+                  />
+                  </Card.Text>
               </Card.Body>
             </Card>
-
-            {/* Database */}
-
-            <Card className="focus mt-2 mb-2">
-              <Card.Body>
-                <Card.Title className="text-center  card-title">Database</Card.Title>
-                <hr />
-                <Card.Text className="card-text d-flex justify-content-start flex-column">
-                  {skills.databases.map((skill, index) => (
-                    <span className="p-2" key={index}>
-                      <a className="text-dark text-decoration-none" href={skill.link} target="_blank" rel="noopener noreferrer">
-                        <Image src={skill.imgSrc} alt={skill.imgAltText} rounded className="image-style m-1"></Image> {skill.skillName}
-                      </a>
-                    </span>
-                  ))}
-                </Card.Text>
-              </Card.Body>
-            </Card>
-            {/* Version Control */}
-
-            <Card className="focus mt-2 mb-2">
-              <Card.Body>
-                <Card.Title className="text-center  card-title">Version Control</Card.Title>
-                <hr />
-                <Card.Text className="card-text d-flex justify-content-start flex-column">
-                  <span className="p-2">
-                    <a className="text-dark text-decoration-none" href={skills.versionControl[0].link} target="_blank" rel="noopener noreferrer">
-                      <Image src={skills.versionControl[0].imgSrc} alt={skills.versionControl[0].imgAltText} rounded className="image-style m-1"></Image> {skills.versionControl[0].skillName}
-                    </a>
-                  </span>
-                </Card.Text>
-              </Card.Body>
-            </Card>
-          </Col>
-        </Row>
     </div>
+    
   );
 };
 

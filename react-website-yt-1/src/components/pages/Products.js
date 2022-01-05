@@ -6,7 +6,7 @@ export default function Products() {
   return (
   
   <>
-  <h1 className='products'>Projects</h1>
+  <h1 className='products'>Experience</h1>
   <Projects />
   <Footer />
   </>

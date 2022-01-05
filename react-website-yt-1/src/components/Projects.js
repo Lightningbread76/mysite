@@ -1,11 +1,19 @@
 import React from 'react'
 import './Cards.css';
+import Card from 'react-bootstrap/Card'
 import CardItem from './CardItem';
 import Project from './Project';
 function Projects() {
     return (
+      
            <div className='cards'>
-          <div className='cards__container'>
+             <Card className="category-title">
+              <Card.Body>
+                {/* Frontend */}
+                <Card.Title className="card-title">Projects</Card.Title>
+                <hr />
+                <Card.Text className="card-text">
+                <div className='cards__container'>
           <ul className='cards__items'>
             <Project
               src='images/checkmate_logo.png'
@@ -25,8 +33,18 @@ function Projects() {
               label='Social Sentiment Project'
               path='https://github.com/ksapru/BU-SocialSentiment583'
             />
+            <Project
+              src='images/beahero.png'
+              text='Be a Hero - a choose your own adventure book website'
+              label='Be a Hero'
+              path='https://kmi.eshuwu.net/'
+            />
           </ul>
         </div>
+                  </Card.Text>
+              </Card.Body>
+            </Card>
+          
       </div> 
 
     )
