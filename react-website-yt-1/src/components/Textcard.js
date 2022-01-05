@@ -1,7 +1,7 @@
 import React from 'react';
 //import { Link } from 'react-router-dom';
 
-function Card(props) {
+function Textcard(props) {
   return (
     <>
       <li className='cards__item'>
@@ -14,4 +14,4 @@ function Card(props) {
   );
 }
 
-export default Card;
+export default Textcard;
