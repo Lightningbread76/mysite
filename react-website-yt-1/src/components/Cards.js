@@ -1,6 +1,6 @@
 import React from 'react';
 import './Cards.css';
-import CardItem from './CardItem';
+//import CardItem from './CardItem';
 import Textcard from './Textcard';
 import Icon from './Icon';
 import Hobby from './Hobby';
@@ -22,7 +22,6 @@ function Cards() {
             <div className='cards__item'>
             <Textcard
               text="As someone who has been coding since the age of 14, I consider myself an experienced programmer. I’ve done a variety of projects in different fields in Computer Science, my most notable ones are the Note taking android app(Checkmate) and an interactive web book website. 
-
               What I can bring to the table is a deep understanding in Object Oriented Programming,HTML/CSS,  javascript, typescript, MongoDB and Firebase. 
               I also have experience in python, R, and the agile development workflow from my past internships and courses at Boston University."
               text1="I am a fast learner, especially when I come to develop a passion for the subject. My favorite method of learning is pair programming as we can not only share and exchange our knowledge but also create a sense of understanding and comradeship. 

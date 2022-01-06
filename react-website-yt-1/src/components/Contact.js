@@ -2,8 +2,6 @@ import React from 'react'
 import './Cards.css';
 import Card from 'react-bootstrap/Card'
 import Skillcard from './Skillcard'
-import Textcard from './Textcard';
-import Icon from './Icon';
 function Contact() {
     return (
         <div className='cards'>
@@ -12,6 +10,7 @@ function Contact() {
             <div className='cards__portrait'>
             <img
               src='images/goodlookin.jpg'
+              alt=''
             />
             </div>
             <div className='cards__item'>

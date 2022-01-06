@@ -6,7 +6,7 @@ export default function Services() {
   return (
   
   <>
-  <h1 className='services'></h1>
+  <div className='services'></div>
   <Skills/>
   <Footer/>
   </>
