@@ -1,7 +1,7 @@
 import React from 'react'
 import './Cards.css';
 import Card from 'react-bootstrap/Card'
-import CardItem from './CardItem';
+//import CardItem from './CardItem';
 import Project from './Project';
 function Projects() {
     return (
