@@ -15,7 +15,7 @@
     "gh-pages": "^1.2.0"
   },
   "scripts": {
-    "deploy": "gh-pages -d react-website-yt-1",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
